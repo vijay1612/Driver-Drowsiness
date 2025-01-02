@@ -31,16 +31,3 @@ To get the project up and running on your local machine, follow these steps:
    cd Driver-Drowsiness
    Driver-Drowsiness/
 Driver-Drowsiness/
-│
-├── driver_drowsiness_detection.py  # Main Python script for detection
-├── requirements.txt               # List of required libraries
-├── dataset/                       # Folder containing dataset of images/videos for training and testing
-│   ├── eating_left.mp4.zip
-│   ├── eating_right.mp4.zip
-│   └── ...
-├── model/                         # Folder for trained models
-├── utils/                         # Helper functions and utilities
-│   ├── video_processing.py
-│   ├── facial_landmarks.py
-│   └── ...
-└── README.md                      # Project documentation
