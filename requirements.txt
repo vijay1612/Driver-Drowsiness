@@ -1,0 +1,34 @@
+
+For the project to run smoothly, you need to install the required Python libraries. Use the following command to install all dependencies:
+pip install -r requirements.txt
+opencv-python
+dlib
+tensorflow
+scikit-learn
+matplotlib
+seaborn
+numpy
+imutils
+Key Python Libraries:
+	•	OpenCV: To handle real-time video input and facial recognition.
+	•	Dlib: For detecting facial landmarks.
+	•	TensorFlow (optional, if you’re training a deep learning model): For building any neural network-based solution.
+	•	Scikit-learn: For any machine learning algorithms used in the project.
+	•	Matplotlib/Seaborn: For visualizing training results, accuracy, etc.
+
+How It Works
+      The system works by capturing frames from the video feed. For each frame:
+	1.	Face Detection: Using OpenCV and Dlib, the system detects the driver’s face.
+	2.	Eye Aspect Ratio (EAR): The system calculates the EAR for each eye to check if the driver’s eyes are closed.
+	3.	Drowsiness Detection: If the EAR falls below a certain threshold for a prolonged period, it indicates that the driver might be drowsy, and an alert is triggered.
+    Drowsiness Detection Model
+
+Algorithm:
+	•	Eye Aspect Ratio (EAR): This is a simple calculation to determine the eye state (open or closed). The EAR is the ratio of distances between specific facial landmarks around the eyes. When the eyes are closed, the EAR value decreases significantly.
+
+Drowsiness Threshold:
+	•	A threshold is set for EAR to determine when the driver is drowsy. The system will track the EAR values over time, and if the driver’s eyes stay closed beyond a set time, a drowsiness warning is triggered.
+
+Model Training (Optional):
+
+If you have custom data or want to improve the model, you can train a neural network to classify the state of the driver (awake or drowsy) based on their facial features. The trained model can then be used to provide more accurate predictions.
