@@ -30,13 +30,14 @@ To get the project up and running on your local machine, follow these steps:
    git clone https://github.com/vijay1612/Driver-Drowsiness.git
    cd Driver-Drowsiness
    Driver-Drowsiness/
+Driver-Drowsiness/
 │
 ├── driver_drowsiness_detection.py  # Main Python script for detection
 ├── requirements.txt               # List of required libraries
 ├── dataset/                       # Folder containing dataset of images/videos for training and testing
 │   ├── eating_left.mp4.zip
 │   ├── eating_right.mp4.zip
-│   └── you can add your own data sets.
+│   └── ...
 ├── model/                         # Folder for trained models
 ├── utils/                         # Helper functions and utilities
 │   ├── video_processing.py
